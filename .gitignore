@@ -3,6 +3,7 @@ exec/*
 
 # But not these files...
 !exec/.gitignore
+!exec/text.txt
 
 # And not these subdirectories
 !exec/
