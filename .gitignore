@@ -1,0 +1,8 @@
+# Ignore everything in the exec directory
+exec/*
+
+# But not these files...
+!exec/.gitignore
+
+# And not these subdirectories
+!exec/
