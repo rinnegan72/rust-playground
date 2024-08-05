@@ -15,10 +15,10 @@ fn transpose()
 // The following struct is for the activity.
 #[derive(Debug)]
 struct Matrix(f32, f32, f32, f32);
-impl fmt::Display for Matrix<'_>{
+impl fmt::Display for Matrix{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        let num = 0;
-        for
+        let duplicate = Matrix(0.0,0.0,0.0,0.0);
+        
     }
     
 }
