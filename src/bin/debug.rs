@@ -14,4 +14,6 @@ fn main() {
     println!("{:#?}", peter);
     // Prints in 1 line
     println!("{:?}", peter);
+    // who is spider-man?
+    println!("Spider-man's true identity is {} and he is {}",peter.name,peter.age);
 }
