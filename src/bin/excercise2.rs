@@ -7,22 +7,20 @@ fn reverse(pair: (i32, bool)) -> (bool, i32) {
     (bool_param, int_param)
 }
 
-fn transpose()
-{
-    
-}
-
 // The following struct is for the activity.
 #[derive(Debug)]
 struct Matrix(f32, f32, f32, f32);
 impl fmt::Display for Matrix{
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        let duplicate = Matrix(0.0,0.0,0.0,0.0);
-        
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{} {}\n{} {}", self.0, self.1, self.2, self.3)
     }
-    
 }
 
+fn transpose(table: Matrix) -> Matrix{
+    let Matrix(o_0_mat, o_1_mat, i_0_mat, i_1_mat) = table;
+    let result = Matrix(o_0_mat, i_0_mat, o_1_mat, i_1_mat);
+    return result;
+}
 fn main() {
     // A tuple with a bunch of different types.
     let long_tuple = (1u8, 2u16, 3u32, 4u64,
