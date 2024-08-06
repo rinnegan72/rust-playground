@@ -1,6 +1,6 @@
 #[derive(Debug)]
-struct Person<'a> {
-    name: &'a str,
+struct Person {
+    name: &'static str,
     age: u8
 }
 //structures like above can't be printed due to rust's type safety
