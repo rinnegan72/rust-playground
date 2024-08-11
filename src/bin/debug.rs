@@ -1,6 +1,6 @@
 #[derive(Debug)]
-struct Person<'a> {
-    name: &'a str,
+struct Person {
+    name: &'static str,
     age: u8
 }
 //structures like above can't be printed due to rust's type safety
@@ -14,4 +14,6 @@ fn main() {
     println!("{:#?}", peter);
     // Prints in 1 line
     println!("{:?}", peter);
+    // who is spider-man?
+    println!("Spider-man's true identity is {} and he is {}",peter.name,peter.age);
 }

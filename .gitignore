@@ -1,6 +1,6 @@
 # Ignore everything in the exec directory
 exec/*
-
+/target
 # But not these files...
 !exec/.gitignore
 !exec/text.txt
